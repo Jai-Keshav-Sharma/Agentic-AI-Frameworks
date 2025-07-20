@@ -1,0 +1,33 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.env
+
+# Jupyter and notebook checkpoints
+.ipynb_checkpoints/
+
+# Lock files
+*.lock
+
+# Database and memory files
+*.db
+*.sqlite3
+memory/
+
+# Output and generated content
+output/
+
+# Personal or sensitive files
+*.pdf
+*.md
+user_preference.txt
+
+# Ignore all .env files in subdirectories
+**/.env
