@@ -1,0 +1,1 @@
+Current USD to INR exchange rate is approximately 86.48 INR for 1 USD.
