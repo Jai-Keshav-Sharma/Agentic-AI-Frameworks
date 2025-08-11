@@ -19,7 +19,6 @@ Transform from AI enthusiast to agentic systems architect through hands-on exper
 - **🔌 MCP Integration**: Tool ecosystem integration via Model Context Protocol
 
 ```mermaid
-%%{init: {'theme':'dark','themeVariables': {'primaryColor': '#ff6b6b', 'primaryTextColor': '#fff', 'primaryBorderColor': '#ff6b6b', 'lineColor': '#ffa500', 'sectionBkColor': '#1e1e1e', 'altSectionBkColor': '#2d2d2d', 'gridColor': '#404040', 'textColor': '#ffffff', 'taskBkColor': '#404040', 'taskTextColor': '#ffffff', 'taskTextLightColor': '#ffffff', 'taskTextOutsideColor': '#ffffff', 'taskTextClickableColor': '#003163', 'activeTaskBkColor': '#ff6b6b', 'activeTaskBorderColor': '#ff6b6b', 'gridColor': '#404040', 'section0': '#2d2d2d', 'section1': '#3d3d3d', 'section2': '#4d4d4d', 'section3': '#5d5d5d'}}}%%
 graph TB
     subgraph "🎯 Learning Journey"
         A[🔧 Foundations<br/>Core Concepts & LLM Basics] --> B[🚀 OpenAI Agents<br/>Multi-Agent Systems]
@@ -43,17 +42,21 @@ graph TB
     F --> J
     F --> K
     
-    style A fill:#1a1a2e,stroke:#16213e,stroke-width:2px,color:#ffffff
-    style B fill:#16213e,stroke:#0f3460,stroke-width:2px,color:#ffffff
-    style C fill:#0f3460,stroke:#533483,stroke-width:2px,color:#ffffff
-    style D fill:#533483,stroke:#7209b7,stroke-width:2px,color:#ffffff
-    style E fill:#7209b7,stroke:#a663cc,stroke-width:2px,color:#ffffff
-    style F fill:#a663cc,stroke:#4d72aa,stroke-width:2px,color:#ffffff
-    style G fill:#2d5016,stroke:#4d7c0f,stroke-width:2px,color:#ffffff
-    style H fill:#7c2d12,stroke:#dc2626,stroke-width:2px,color:#ffffff
-    style I fill:#164e63,stroke:#0891b2,stroke-width:2px,color:#ffffff
-    style J fill:#7c2d12,stroke:#ea580c,stroke-width:2px,color:#ffffff
-    style K fill:#581c87,stroke:#7c3aed,stroke-width:2px,color:#ffffff
+    classDef foundations fill:#1a1a2e,stroke:#16213e,stroke-width:2px,color:#ffffff
+    classDef openai fill:#16213e,stroke:#0f3460,stroke-width:2px,color:#ffffff
+    classDef crew fill:#0f3460,stroke:#533483,stroke-width:2px,color:#ffffff
+    classDef langgraph fill:#533483,stroke:#7209b7,stroke-width:2px,color:#ffffff
+    classDef autogen fill:#7209b7,stroke:#a663cc,stroke-width:2px,color:#ffffff
+    classDef mcp fill:#a663cc,stroke:#4d72aa,stroke-width:2px,color:#ffffff
+    classDef apps fill:#2d5016,stroke:#4d7c0f,stroke-width:2px,color:#ffffff
+    
+    class A foundations
+    class B openai
+    class C crew
+    class D langgraph
+    class E autogen
+    class F mcp
+    class G,H,I,J,K apps
 ```
 
 ## 📋 Table of Contents
@@ -118,7 +121,6 @@ jupyter notebook 1_lab.ipynb
 Each framework represents a different approach to multi-agent systems, with unique strengths and use cases:
 
 ```mermaid
-%%{init: {'theme':'dark','themeVariables': {'primaryColor': '#ff6b6b', 'primaryTextColor': '#fff', 'primaryBorderColor': '#ff6b6b', 'lineColor': '#ffa500', 'sectionBkColor': '#1e1e1e', 'altSectionBkColor': '#2d2d2d', 'gridColor': '#404040', 'textColor': '#ffffff', 'taskBkColor': '#404040', 'taskTextColor': '#ffffff', 'taskTextLightColor': '#ffffff', 'taskTextOutsideColor': '#ffffff', 'taskTextClickableColor': '#003163', 'activeTaskBkColor': '#ff6b6b', 'activeTaskBorderColor': '#ff6b6b'}}}%%
 graph TB
     subgraph "🔧 Foundations"
         A1[LLM Fundamentals]
@@ -162,12 +164,19 @@ graph TB
         F4[Autonomous Trading Floor]
     end
     
-    style A1 fill:#1a1a2e,stroke:#16213e,stroke-width:2px,color:#ffffff
-    style B1 fill:#16213e,stroke:#0f3460,stroke-width:2px,color:#ffffff
-    style C1 fill:#0f3460,stroke:#533483,stroke-width:2px,color:#ffffff
-    style D1 fill:#533483,stroke:#7209b7,stroke-width:2px,color:#ffffff
-    style E1 fill:#7209b7,stroke:#a663cc,stroke-width:2px,color:#ffffff
-    style F1 fill:#a663cc,stroke:#4d72aa,stroke-width:2px,color:#ffffff
+    classDef foundations fill:#1a1a2e,stroke:#16213e,stroke-width:2px,color:#ffffff
+    classDef openai fill:#16213e,stroke:#0f3460,stroke-width:2px,color:#ffffff
+    classDef crew fill:#0f3460,stroke:#533483,stroke-width:2px,color:#ffffff
+    classDef langgraph fill:#533483,stroke:#7209b7,stroke-width:2px,color:#ffffff
+    classDef autogen fill:#7209b7,stroke:#a663cc,stroke-width:2px,color:#ffffff
+    classDef mcp fill:#a663cc,stroke:#4d72aa,stroke-width:2px,color:#ffffff
+    
+    class A1,A2,A3,A4 foundations
+    class B1,B2,B3,B4 openai
+    class C1,C2,C3,C4 crew
+    class D1,D2,D3,D4 langgraph
+    class E1,E2,E3,E4 autogen
+    class F1,F2,F3,F4 mcp
 ```
 
 ### Framework Comparison
@@ -205,25 +214,26 @@ graph TB
 - Protocol-based tool integration
 
 ```mermaid
-%%{init: {'theme':'dark','themeVariables': {'primaryColor': '#ff6b6b', 'primaryTextColor': '#fff', 'primaryBorderColor': '#ff6b6b', 'lineColor': '#ffa500', 'sectionBkColor': '#1e1e1e', 'altSectionBkColor': '#2d2d2d', 'gridColor': '#404040', 'textColor': '#ffffff', 'taskBkColor': '#404040', 'taskTextColor': '#ffffff', 'taskTextLightColor': '#ffffff', 'taskTextOutsideColor': '#ffffff', 'taskTextClickableColor': '#003163', 'activeTaskBkColor': '#ff6b6b', 'activeTaskBorderColor': '#ff6b6b'}}}%%
-timeline
+gantt
     title Learning Journey Timeline
+    dateFormat  X
+    axisFormat %s
     
-    section Week 1-2 : Foundations
-        🔧 Core Concepts     : LLM Basics : Agent Architecture : Tool Integration
-        💡 Key Skills       : Python Development : API Integration : Basic Prompting
+    section Foundations
+    🔧 Core Concepts    :done, foundations1, 1, 2
+    💡 Python & APIs   :done, foundations2, 1, 2
     
-    section Week 3-4 : OpenAI + CrewAI  
-        🚀 Multi-Agents     : OpenAI Agents SDK : CrewAI Orchestration : Memory Systems
-        🎯 Projects         : Sales Automation : Research Platform : Investment Analysis
+    section OpenAI + CrewAI
+    🚀 Multi-Agents     :active, openai1, 3, 4
+    🎯 Production Apps  :openai2, 3, 4
     
-    section Week 5-6 : LangGraph + AutoGen
-        🕸️ Advanced Systems : State Machines : Distributed Runtime : Meta-Programming  
-        🏗️ Applications     : Workflow Automation : Agent Creation : Communication Protocols
+    section LangGraph + AutoGen
+    🕸️ State Machines   :langgraph1, 5, 6
+    🏗️ Distributed Sys :autogen1, 5, 6
     
-    section Week 7-8 : MCP + Production
-        🔌 Integration      : Protocol Standards : Tool Ecosystems : Production Deployment
-        💼 Mastery          : Trading Systems : Enterprise Apps : Full-Stack Solutions
+    section MCP + Production
+    🔌 Tool Integration :mcp1, 7, 8
+    💼 Enterprise Apps  :production1, 7, 8
 ```
 
 ## 🎯 Key Projects
@@ -293,7 +303,6 @@ Production research application with streaming interface:
 ### Architecture Patterns
 
 ```mermaid
-%%{init: {'theme':'dark','themeVariables': {'primaryColor': '#ff6b6b', 'primaryTextColor': '#fff', 'primaryBorderColor': '#ff6b6b', 'lineColor': '#ffa500', 'sectionBkColor': '#1e1e1e', 'altSectionBkColor': '#2d2d2d', 'gridColor': '#404040', 'textColor': '#ffffff', 'taskBkColor': '#404040', 'taskTextColor': '#ffffff', 'taskTextLightColor': '#ffffff', 'taskTextOutsideColor': '#ffffff', 'taskTextClickableColor': '#003163', 'activeTaskBkColor': '#ff6b6b', 'activeTaskBorderColor': '#ff6b6b'}}}%%
 graph TB
     subgraph "🏢 Enterprise Applications"
         A[Customer Support<br/>Intelligence]
@@ -336,10 +345,15 @@ graph TB
     K --> O
     L --> P
     
-    style A fill:#164e63,stroke:#0891b2,stroke-width:2px,color:#ffffff
-    style E fill:#7c2d12,stroke:#dc2626,stroke-width:2px,color:#ffffff
-    style I fill:#581c87,stroke:#7c3aed,stroke-width:2px,color:#ffffff
-    style M fill:#365314,stroke:#65a30d,stroke-width:2px,color:#ffffff
+    classDef enterprise fill:#164e63,stroke:#0891b2,stroke-width:2px,color:#ffffff
+    classDef financial fill:#7c2d12,stroke:#dc2626,stroke-width:2px,color:#ffffff
+    classDef technology fill:#581c87,stroke:#7c3aed,stroke-width:2px,color:#ffffff
+    classDef core fill:#365314,stroke:#65a30d,stroke-width:2px,color:#ffffff
+    
+    class A,B,C,D enterprise
+    class E,F,G,H financial
+    class I,J,K,L technology
+    class M,N,O,P core
 ```
 
 ### Industry Applications
@@ -367,7 +381,6 @@ graph TB
 ### System Components
 
 ```mermaid
-%%{init: {'theme':'dark','themeVariables': {'primaryColor': '#ff6b6b', 'primaryTextColor': '#fff', 'primaryBorderColor': '#ff6b6b', 'lineColor': '#ffa500', 'sectionBkColor': '#1e1e1e', 'altSectionBkColor': '#2d2d2d', 'gridColor': '#404040', 'textColor': '#ffffff', 'taskBkColor': '#404040', 'taskTextColor': '#ffffff', 'taskTextLightColor': '#ffffff', 'taskTextOutsideColor': '#ffffff', 'taskTextClickableColor': '#003163', 'activeTaskBkColor': '#ff6b6b', 'activeTaskBorderColor': '#ff6b6b'}}}%%
 graph TB
     subgraph "🧠 AI Models"
         A1[OpenAI GPT-4/4o]
@@ -433,11 +446,17 @@ graph TB
     D4 --> E4
     D5 --> E5
     
-    style A1 fill:#1a1a2e,stroke:#16213e,stroke-width:2px,color:#ffffff
-    style B1 fill:#16213e,stroke:#0f3460,stroke-width:2px,color:#ffffff
-    style C1 fill:#0f3460,stroke:#533483,stroke-width:2px,color:#ffffff
-    style D1 fill:#533483,stroke:#7209b7,stroke-width:2px,color:#ffffff
-    style E1 fill:#7209b7,stroke:#a663cc,stroke-width:2px,color:#ffffff
+    classDef models fill:#1a1a2e,stroke:#16213e,stroke-width:2px,color:#ffffff
+    classDef frameworks fill:#16213e,stroke:#0f3460,stroke-width:2px,color:#ffffff
+    classDef integration fill:#0f3460,stroke:#533483,stroke-width:2px,color:#ffffff
+    classDef persistence fill:#533483,stroke:#7209b7,stroke-width:2px,color:#ffffff
+    classDef interfaces fill:#7209b7,stroke:#a663cc,stroke-width:2px,color:#ffffff
+    
+    class A1,A2,A3,A4,A5 models
+    class B1,B2,B3,B4,B5 frameworks
+    class C1,C2,C3,C4,C5 integration
+    class D1,D2,D3,D4,D5 persistence
+    class E1,E2,E3,E4,E5 interfaces
 ```
 
 ### Technology Stack
@@ -649,4 +668,4 @@ This repository and all its contents are proprietary and confidential. The code,
 ### 🔒 Enforcement:
 This repository is protected by copyright law. Unauthorized use, reproduction, or distribution may result in legal action.
 
-**For licensing inquiries or permissions beyond educational use, please contact: [jai.keshav.sharma@example.com]**
+**For licensing inquiries or permissions beyond educational use, please contact: ksharma9719@gmail.com**
