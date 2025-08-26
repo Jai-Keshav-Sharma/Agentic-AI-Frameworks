@@ -5,11 +5,11 @@
 [![Frameworks](https://img.shields.io/badge/Frameworks-6-green.svg)](#frameworks-overview)
 [![Production Ready](https://img.shields.io/badge/Production-Ready-success.svg)](#production-applications)
 
-A comprehensive exploration of cutting-edge agentic AI frameworks, from foundational concepts to production-ready autonomous systems. This repository demonstrates the complete spectrum of multi-agent orchestration technologies, including OpenAI Agents, CrewAI, LangGraph, AutoGen, and Model Context Protocol (MCP) integrations.
+A comprehensive implementation of cutting-edge agentic AI frameworks, showcasing the complete spectrum of multi-agent orchestration technologies. This repository demonstrates advanced implementations across OpenAI Agents, CrewAI, LangGraph, AutoGen, and Model Context Protocol (MCP) integrations.
 
-## 🌟 What You'll Master
+## 🌟 What I Built
 
-Transform from AI enthusiast to agentic systems architect through hands-on experience with:
+Complete multi-agent systems implementations featuring:
 
 - **🔧 Foundation Building**: Core agentic AI concepts and architecture patterns
 - **🚀 OpenAI Agents**: Advanced multi-agent systems with tool integration
@@ -19,16 +19,17 @@ Transform from AI enthusiast to agentic systems architect through hands-on exper
 - **🔌 MCP Integration**: Tool ecosystem integration via Model Context Protocol
 
 ```mermaid
+%%{init: {'theme':'dark', 'themeVariables': {'primaryColor': '#4CAF50', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#4CAF50', 'lineColor': '#ffffff', 'sectionBkColor': '#1e1e1e', 'altSectionBkColor': '#2d2d2d', 'gridColor': '#404040', 'textColor': '#ffffff', 'taskBkColor': '#404040', 'taskTextColor': '#ffffff', 'taskTextLightColor': '#ffffff', 'taskTextOutsideColor': '#ffffff', 'activeTaskBkColor': '#4CAF50', 'activeTaskBorderColor': '#4CAF50', 'cScale0': '#1a1a2e', 'cScale1': '#16213e', 'cScale2': '#0f3460', 'cScale3': '#533483', 'cScale4': '#7209b7', 'cScale5': '#a663cc'}}}%%
 graph TB
-    subgraph "🎯 Learning Journey"
-        A[🔧 Foundations<br/>Core Concepts & LLM Basics] --> B[🚀 OpenAI Agents<br/>Multi-Agent Systems]
-        B --> C[👥 CrewAI<br/>Agent Orchestration]
+    subgraph "🎯 Implementation Journey"
+        A[🔧 Foundations<br/>Core Concepts & LLM Integration] --> B[🚀 OpenAI Agents<br/>Multi-Agent Systems]
+        B --> C[👥 CrewAI<br/>Production Orchestration]
         C --> D[🕸️ LangGraph<br/>State-Based Workflows]
         D --> E[🤖 AutoGen<br/>Distributed Systems]
         E --> F[🔌 MCP Integration<br/>Tool Ecosystems]
     end
     
-    subgraph "💼 Production Applications"
+    subgraph "💼 Production Implementations"
         G[📊 Trading Systems]
         H[🔍 Research Platforms]
         I[💬 Customer Support]
@@ -41,51 +42,35 @@ graph TB
     F --> I
     F --> J
     F --> K
-    
-    classDef foundations fill:#1a1a2e,stroke:#16213e,stroke-width:2px,color:#ffffff
-    classDef openai fill:#16213e,stroke:#0f3460,stroke-width:2px,color:#ffffff
-    classDef crew fill:#0f3460,stroke:#533483,stroke-width:2px,color:#ffffff
-    classDef langgraph fill:#533483,stroke:#7209b7,stroke-width:2px,color:#ffffff
-    classDef autogen fill:#7209b7,stroke:#a663cc,stroke-width:2px,color:#ffffff
-    classDef mcp fill:#a663cc,stroke:#4d72aa,stroke-width:2px,color:#ffffff
-    classDef apps fill:#2d5016,stroke:#4d7c0f,stroke-width:2px,color:#ffffff
-    
-    class A foundations
-    class B openai
-    class C crew
-    class D langgraph
-    class E autogen
-    class F mcp
-    class G,H,I,J,K apps
 ```
 
 ## 📋 Table of Contents
 
-- [🚀 Quick Start](#-quick-start)
-- [🏗️ Frameworks Overview](#️-frameworks-overview)
-- [📚 Learning Path](#-learning-path)
-- [🎯 Key Projects](#-key-projects)
-- [💼 Production Applications](#-production-applications)
+- [🚀 Implementation Overview](#-implementation-overview)
+- [🏗️ Framework Implementations](#️-framework-implementations)
+- [📚 Development Journey](#-development-journey)
+- [🎯 Key Projects Built](#-key-projects-built)
+- [💼 Production Systems](#-production-systems)
 - [🛠️ Technical Architecture](#️-technical-architecture)
-- [🔧 Development Setup](#-development-setup)
-- [📖 Documentation](#-documentation)
+- [🔧 Setup Instructions](#-setup-instructions)
+- [📖 Technical Documentation](#-technical-documentation)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 
-## 🚀 Quick Start
+## 🚀 Getting Started
 
-### Prerequisites
-- Python 3.13+ (recommended)
+### System Requirements
+- Python 3.13+ 
 - OpenAI API Key
-- Git for version control
+- Git
 
-### Installation
+### Installation & Setup
 ```bash
 # Clone the repository
 git clone https://github.com/Jai-Keshav-Sharma/Agentic-AI-Frameworks.git
 cd Agentic-AI-Frameworks
 
-# Create virtual environment
+# Environment setup
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
@@ -95,32 +80,28 @@ pip install -r requirements.txt
 uv sync
 ```
 
-### Environment Configuration
+### Configuration
 ```bash
-# Copy environment template
-cp .env.example .env
-
-# Add your API keys
+# Add API keys to .env
 echo "OPENAI_API_KEY=your_openai_key_here" >> .env
 echo "LANGCHAIN_API_KEY=your_langchain_key_here" >> .env
-# Add other required keys as needed
 ```
 
-### Run Your First Agent
+### Running the Systems
 ```python
-# Test the setup
+# Test basic functionality
 python main.py
 
-# Start with foundations
-cd 1_foundations
-jupyter notebook 1_lab.ipynb
+# Run specific implementations
+cd 1_foundations && jupyter notebook 1_lab.ipynb
 ```
 
-## 🏗️ Frameworks Overview
+## 🏗️ Framework Implementations
 
-Each framework represents a different approach to multi-agent systems, with unique strengths and use cases:
+Each framework implementation demonstrates different approaches to multi-agent systems:
 
 ```mermaid
+%%{init: {'theme':'dark', 'themeVariables': {'primaryColor': '#4CAF50', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#4CAF50', 'lineColor': '#ffffff', 'sectionBkColor': '#1e1e1e', 'altSectionBkColor': '#2d2d2d', 'gridColor': '#404040', 'textColor': '#ffffff', 'taskBkColor': '#404040', 'taskTextColor': '#ffffff', 'taskTextLightColor': '#ffffff', 'taskTextOutsideColor': '#ffffff', 'activeTaskBkColor': '#4CAF50', 'activeTaskBorderColor': '#4CAF50'}}}%%
 graph TB
     subgraph "🔧 Foundations"
         A1[LLM Fundamentals]
@@ -163,59 +144,46 @@ graph TB
         F3[Multi-Server Integration]
         F4[Autonomous Trading Floor]
     end
-    
-    classDef foundations fill:#1a1a2e,stroke:#16213e,stroke-width:2px,color:#ffffff
-    classDef openai fill:#16213e,stroke:#0f3460,stroke-width:2px,color:#ffffff
-    classDef crew fill:#0f3460,stroke:#533483,stroke-width:2px,color:#ffffff
-    classDef langgraph fill:#533483,stroke:#7209b7,stroke-width:2px,color:#ffffff
-    classDef autogen fill:#7209b7,stroke:#a663cc,stroke-width:2px,color:#ffffff
-    classDef mcp fill:#a663cc,stroke:#4d72aa,stroke-width:2px,color:#ffffff
-    
-    class A1,A2,A3,A4 foundations
-    class B1,B2,B3,B4 openai
-    class C1,C2,C3,C4 crew
-    class D1,D2,D3,D4 langgraph
-    class E1,E2,E3,E4 autogen
-    class F1,F2,F3,F4 mcp
 ```
 
-### Framework Comparison
+### Implementation Summary
 
-| Framework | Strengths | Best Use Cases | Complexity |
-|-----------|-----------|----------------|------------|
-| **🔧 Foundations** | Learning fundamentals, clear concepts | Education, prototyping | ⭐⭐ |
-| **🚀 OpenAI Agents** | Native OpenAI integration, simplicity | Rapid prototyping, OpenAI-focused | ⭐⭐⭐ |
-| **👥 CrewAI** | Production-ready, memory systems | Enterprise applications, complex workflows | ⭐⭐⭐⭐ |
-| **🕸️ LangGraph** | State management, workflow control | Process automation, decision trees | ⭐⭐⭐⭐ |
-| **🤖 AutoGen** | Distributed systems, meta-programming | Scalable architectures, research | ⭐⭐⭐⭐⭐ |
-| **🔌 MCP** | Tool standardization, ecosystem | Integration platforms, tool orchestration | ⭐⭐⭐⭐ |
+| Framework | Implementation Focus | Built Applications | Complexity |
+|-----------|---------------------|-------------------|------------|
+| **🔧 Foundations** | Core concepts, architecture patterns | Educational demos, business cases | ⭐⭐ |
+| **🚀 OpenAI Agents** | Native OpenAI integration | Multi-agent research platform | ⭐⭐⭐ |
+| **👥 CrewAI** | Production orchestration | 5 enterprise applications | ⭐⭐⭐⭐ |
+| **🕸️ LangGraph** | State-based workflows | The Sidekick assistant | ⭐⭐⭐⭐ |
+| **🤖 AutoGen** | Distributed systems | Agent Creator meta-system | ⭐⭐⭐⭐⭐ |
+| **🔌 MCP** | Tool ecosystem integration | Autonomous trading floor | ⭐⭐⭐⭐ |
 
-## 📚 Learning Path
+## 📚 Development Journey
 
-### 🎓 Beginner Track (1-2 weeks)
-**Start Here:** [`1_foundations/`](1_foundations/)
-- Core LLM and agentic AI concepts
-- Basic agent architecture patterns
-- Tool integration fundamentals
+### 🔧 Phase 1: Foundation Development (Weeks 1-2)
+**Built:** [`1_foundations/`](1_foundations/)
+- Core LLM integration patterns
+- Basic agent architecture implementations
+- Tool integration frameworks
 - Business case development
 
-### 🚀 Intermediate Track (2-3 weeks)
-**Next Steps:** [`2_openai/`](2_openai/) → [`3_crew/`](3_crew/)
-- Multi-agent system design
-- Production-ready orchestration
-- Memory and persistence systems
-- Real-world project development
+### 🚀 Phase 2: OpenAI & CrewAI Systems (Weeks 3-4)
+**Built:** [`2_openai/`](2_openai/) → [`3_crew/`](3_crew/)
+- Multi-agent orchestration systems
+- Production-ready frameworks
+- Memory and persistence layers
+- Real-world applications
 
-### 🏆 Advanced Track (3-4 weeks)
-**Master Level:** [`4_langgraph/`](4_langgraph/) → [`5_autogen/`](5_autogen/) → [`6_mcp/`](6_mcp/)
+### 🏆 Phase 3: Advanced Architectures (Weeks 5-8)
+**Built:** [`4_langgraph/`](4_langgraph/) → [`5_autogen/`](5_autogen/) → [`6_mcp/`](6_mcp/)
 - State machine workflows
 - Distributed agent systems
-- Meta-programming and autonomous creation
-- Protocol-based tool integration
+- Meta-programming capabilities
+- Protocol-based integrations
 
 ```mermaid
+%%{init: {'theme':'dark', 'themeVariables': {'primaryColor': '#ffffff', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#7C3AED', 'lineColor': '#ffffff', 'sectionBkColor': '#1a1a1a', 'altSectionBkColor': '#262626', 'gridColor': '#333333', 'secondaryColor': '#1a1a1a', 'tertiaryColor': '#333333'}}}%%
 gantt
-    title Learning Journey Timeline
+    title Implementation Timeline
     dateFormat  X
     axisFormat %s
     
@@ -224,19 +192,19 @@ gantt
     💡 Python & APIs   :done, foundations2, 1, 2
     
     section OpenAI + CrewAI
-    🚀 Multi-Agents     :active, openai1, 3, 4
-    🎯 Production Apps  :openai2, 3, 4
+    🚀 Multi-Agents     :done, openai1, 3, 4
+    🎯 Production Apps  :done, openai2, 3, 4
     
     section LangGraph + AutoGen
-    🕸️ State Machines   :langgraph1, 5, 6
-    🏗️ Distributed Sys :autogen1, 5, 6
+    🕸️ State Machines   :done, langgraph1, 5, 6
+    🏗️ Distributed Sys :done, autogen1, 5, 6
     
     section MCP + Production
-    🔌 Tool Integration :mcp1, 7, 8
-    💼 Enterprise Apps  :production1, 7, 8
+    🔌 Tool Integration :done, mcp1, 7, 8
+    💼 Enterprise Apps  :done, production1, 7, 8
 ```
 
-## 🎯 Key Projects
+## 🎯 Key Projects Built
 
 ### 🏆 Flagship Applications
 
@@ -300,9 +268,10 @@ Production research application with streaming interface:
 
 ## 💼 Production Applications
 
-### Architecture Patterns
+### Architecture Patterns Implemented
 
 ```mermaid
+%%{init: {'theme':'dark', 'themeVariables': {'primaryColor': '#ffffff', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#7C3AED', 'lineColor': '#ffffff', 'sectionBkColor': '#1a1a1a', 'altSectionBkColor': '#262626', 'gridColor': '#333333', 'secondaryColor': '#1a1a1a', 'tertiaryColor': '#333333'}}}%%
 graph TB
     subgraph "🏢 Enterprise Applications"
         A[Customer Support<br/>Intelligence]
@@ -378,9 +347,10 @@ graph TB
 
 ## 🛠️ Technical Architecture
 
-### System Components
+### System Components Built
 
 ```mermaid
+%%{init: {'theme':'dark', 'themeVariables': {'primaryColor': '#ffffff', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#7C3AED', 'lineColor': '#ffffff', 'sectionBkColor': '#1a1a1a', 'altSectionBkColor': '#262626', 'gridColor': '#333333', 'secondaryColor': '#1a1a1a', 'tertiaryColor': '#333333'}}}%%
 graph TB
     subgraph "🧠 AI Models"
         A1[OpenAI GPT-4/4o]
