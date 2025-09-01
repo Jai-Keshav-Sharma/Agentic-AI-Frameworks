@@ -1,4 +1,4 @@
-# 🤖 Agentic AI Frameworks: Complete Multi-Agent Systems Mastery
+# 🤖 Agentic AI Frameworks: Complete Multi-Agent Systems Development
 
 [![Python 3.13+](https://img.shields.io/badge/python-3.13+-blue.svg)](https://www.python.org/downloads/)
 [![License: All Rights Reserved](https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg)](#license)
